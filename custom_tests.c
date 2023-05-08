@@ -98,36 +98,57 @@ bool test_is_vowel() {
 
 bool test_is_tail() {
   // TODO: Implement this function.
+  if(!assert_true("is_tail",is_tail('w'))){
+    return false;
+  }
   return true;
 }
 
 bool test_is_head() {
   // TODO: Implement this function.
+  if(!assert_true("is_head",is_head('x'))){
+    return false;
+  }
   return true;
 }
 
 bool test_is_snake() {
   // TODO: Implement this function.
+  if(!assert_true("is_snake",is_snake('>'))){
+    return false;
+  }
   return true;
 }
 
 bool test_body_to_tail() {
   // TODO: Implement this function.
+  if(!assert_true("body_to_tail",body_to_tail('^') == 'w')){
+    return false;
+  }
   return true;
 }
 
 bool test_head_to_body() {
   // TODO: Implement this function.
+  if(!assert_true("head_to_body",head_to_body('W') == '^')){
+    return false;
+  }
   return true;
 }
 
 bool test_get_next_x() {
   // TODO: Implement this function.
+  if(!assert_true("get_next_row",get_next_row(0,'D') == 0)){
+    return false;
+  }
   return true;
 }
 
 bool test_get_next_y() {
   // TODO: Implement this function.
+  if(!assert_true("get_next_col",get_next_col(0,'D') == 1)){
+    return false;
+  }
   return true;
 }
 
